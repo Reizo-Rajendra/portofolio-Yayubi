@@ -24,3 +24,21 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di komputer lokal An
 3. Pindahkan folder tersebut ke dalam direktori server lokal (htdocs):
    ```text
    C:\xampp\htdocs\
+
+   PJBL-YAYUBI-main/                  # Folder Utama Root Proyek
+│
+├── Home page/                      # Modul Landing Page & Katalog Utama
+│   ├── home.html                   # Dashboard produk utama (Tujuan utama setelah masuk)
+│   └── [Aset Gambar Banner/Icon]   # Logo BCA, GoPay, ShopeePay, Motor, dll.
+│
+├── pembayaran/                     # Modul halaman transaksi dan rincian nota
+│
+└── pjbl10/                         # Sistem Inti Aplikasi Berbasis MVC
+    ├── controller/                 # Menyimpan logika pengendali rute (user.controller.php)
+    ├── database/                   # Pengaturan koneksi server (koneksi.php yang sudah di-bypass)
+    ├── models/                     # Tempat manipulasi data dan query objek (home.php)
+    └── view/                       # Bagian Antarmuka Pengguna (User Interface)
+        ├── index.php               # Form Login (Gerbang Tampilan Awal)
+        ├── daftar.php              # Form Registrasi/Pendaftaran Akun Baru
+        ├── style.css               # Pengatur gaya komponen visual halaman login
+        └── global.css              # Pengatur variabel warna dan layouting utama
